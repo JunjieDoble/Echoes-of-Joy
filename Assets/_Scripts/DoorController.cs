@@ -61,7 +61,7 @@ public class DoorController : MonoBehaviour
         }
 
         openCoroutine = null;
-        return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(3.5f);
 
     }
 
