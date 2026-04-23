@@ -1,0 +1,21 @@
+﻿using UnityEngine;
+
+public class CheckpointCollision : MonoBehaviour
+{
+    private Checkpoint checkpoint;
+    private bool isReached = false;
+
+    private void Start()
+    {
+        checkpoint = GameObject.Find("Checkpoints").GetComponent<Checkpoint>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") && !isReached)
+        {
+            isReached = true;
+            checkpoint.SetCheckpoint(transform.position);
+        }
+    }
+}

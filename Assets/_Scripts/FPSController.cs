@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -34,6 +34,7 @@ public class FPSController : MonoBehaviour
     private bool _mIsRunning = false;
     private float _mVerticalSpeed;
     private bool isGrounded = true;
+    private bool isAlive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -49,13 +50,15 @@ public class FPSController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isAlive) return;
+
         // ---------------------------------------Camara-----------------------------------------------------------------------
-        // Movimiento rectilíneo uniforme: X = X0 + Velocidad * Tiempo;
+        // Movimiento rectiléŸ“eo uniforme: X = X0 + Velocidad * Tiempo;
         _mYaw += _mLookDirection.x * rotationSpeed * Time.deltaTime;
         _mPitch += _mLookDirection.y * rotationSpeed * Time.deltaTime;
         _mPitch = Math.Clamp(_mPitch, mMinPitch, mMaxPitch);
 
-        // Rotación local para la cabeza y arma (por el controller), global para personaje entero
+        // Rotacié«‡ local para la cabeza y arma (por el controller), global para personaje entero
         transform.rotation = Quaternion.Euler(0.0f, _mYaw, 0.0f);
         pitchController.localRotation = Quaternion.Euler(_mPitch * (invertPitch ? -1.0f : 1.0f), 0.0f, 0.0f);
 
@@ -126,4 +129,8 @@ public class FPSController : MonoBehaviour
         }
     }
 
+    public void SetAliveState(bool alive)
+    {
+        isAlive = alive;
+    }
 }
