@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
+    public string keyName;
+    
     public GameObject leftDoor;
     public GameObject rightDoor;
 
     private Coroutine openCoroutine;
     private Coroutine closeCoroutine;
-
-    private bool isOpen = false;
 
     private Quaternion leftClosedRotation;
     private Quaternion rightClosedRotation;
@@ -27,7 +27,8 @@ public class DoorController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            OpenDoor();
+            if (InventoryController.Instance.CheckForItem(keyName))
+                OpenDoor();
         }
     }
 
