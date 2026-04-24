@@ -16,7 +16,7 @@ public class StunState : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         _time += Time.deltaTime;
-        if (_time >= 5f)
+        if (_time >= 3f)
         {
             animator.SetBool("Stun", false);
             _time = 0f;

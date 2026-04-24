@@ -16,7 +16,7 @@ public class PatrolState : StateMachineBehaviour
         _enemyBehaviour = animator.transform.GetComponent<EnemyBehaviour>();
         _patrolPoints = _enemyBehaviour.GetPatrolPoints();
 
-        _currentPointIndex = animator.GetInteger("CurrentPointIndex");
+        _currentPointIndex = animator.GetInteger("CurrentPoint");
         _patrolPosition = _patrolPoints[_currentPointIndex].transform.position;
         _patrolPointsCount = _patrolPoints.Length;
 
@@ -37,7 +37,7 @@ public class PatrolState : StateMachineBehaviour
             {
                 _currentPointIndex = _currentPointIndex + 1;
             }
-            animator.SetInteger("CurrentPointIndex", _currentPointIndex);
+            animator.SetInteger("CurrentPoint", _currentPointIndex);
             animator.SetBool("ReachedPoint", true);
         }
 
