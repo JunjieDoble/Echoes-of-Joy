@@ -8,6 +8,8 @@ public class DoorController : MonoBehaviour
     public GameObject leftDoor;
     public GameObject rightDoor;
 
+    public bool requiresKey = false;
+
     private Coroutine openCoroutine;
     private Coroutine closeCoroutine;
 
@@ -27,7 +29,9 @@ public class DoorController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (InventoryController.Instance.CheckForItem(keyName))
+            if (!requiresKey)
+                OpenDoor();
+            else if (InventoryController.Instance.CheckForItem(keyName))
                 OpenDoor();
         }
     }
