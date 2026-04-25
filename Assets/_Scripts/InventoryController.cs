@@ -30,6 +30,14 @@ public class InventoryController : MonoBehaviour
             if (playerInventory[i] == null)
             {
                 playerInventory[i] = item;
+                if (item.Equals("Crucefix"))
+                {
+                    UseCrucefix crucifixScript = this.GetComponent<UseCrucefix>();
+                    if (crucifixScript != null)
+                    {
+                        crucifixScript.addCrucefix();
+                    }
+                }
                 Debug.Log("Item added to inventory: " + item);
                 return;
             }

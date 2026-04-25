@@ -55,6 +55,7 @@ public class EnemyBehaviour : MonoBehaviour
         Gizmos.color = _gizmosColor;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
         Gizmos.DrawRay(transform.position, transform.forward * detectionRadius);
+
     }
 
     private float GetDistanceToPlayer()
@@ -82,5 +83,17 @@ public class EnemyBehaviour : MonoBehaviour
     public float GetSpeed()
     {
         return speed;
+    }
+
+    public void AlertClown()
+    {
+        detectionAngle = 360f;
+        detectionRadius = 20f;
+    }
+
+    public void UnAlertClown()
+    {
+        detectionAngle = 180f;
+        detectionRadius = 10f;
     }
 }

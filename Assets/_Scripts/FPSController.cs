@@ -36,11 +36,15 @@ public class FPSController : MonoBehaviour
     private bool isGrounded = true;
     private bool isAlive = true;
 
+    public GameObject[] clowns; 
+
     // Start is called before the first frame update
     void Start()
     {
         _mYaw = transform.rotation.y;
         _mPitch = pitchController.localRotation.x;
+
+        clowns = GameObject.FindGameObjectsWithTag("Enemy");
 
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -113,10 +117,12 @@ public class FPSController : MonoBehaviour
         if (context.performed)
         {
             _mIsRunning = true;
+            alertClowns();
         }
         else if (context.canceled)
         {
             _mIsRunning = false;
+            unalertClowns();
         }
     }
 
@@ -132,5 +138,29 @@ public class FPSController : MonoBehaviour
     public void SetAliveState(bool alive)
     {
         isAlive = alive;
+    }
+
+    private void alertClowns()
+    {
+        foreach (GameObject clown in clowns)
+        {
+            EnemyBehaviour enemyBehaviour = clown.GetComponent<EnemyBehaviour>();
+            if (enemyBehaviour != null)
+            {
+                enemyBehaviour.AlertClown();
+            }
+        }
+    }
+
+    private void unalertClowns()
+    {
+        foreach (GameObject clown in clowns)
+        {
+            EnemyBehaviour enemyBehaviour = clown.GetComponent<EnemyBehaviour>();
+            if (enemyBehaviour != null)
+            {
+                enemyBehaviour.UnAlertClown();
+            }
+        }
     }
 }
