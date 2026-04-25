@@ -10,6 +10,10 @@ public class UseCrucefix : MonoBehaviour
     {
         if (context.performed)
         {
+            if (!hasCrucefix())
+            {
+                return;
+            }
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
             if (Physics.Raycast(ray, out RaycastHit hit, layerMask))
             {
@@ -18,5 +22,9 @@ public class UseCrucefix : MonoBehaviour
                 enemy.StunEnemy();
             }
         }
+    }
+
+    private bool hasCrucefix() { 
+        return InventoryController.Instance.CheckForItem("Crucefix");
     }
 }

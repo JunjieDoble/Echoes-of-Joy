@@ -20,7 +20,7 @@ public class InventoryController : MonoBehaviour
 
     private void Start()
     {
-        playerInventory = new string[2];
+        playerInventory = new string[8];
     }
 
     public void AddItemToInventory(string item)
@@ -48,5 +48,19 @@ public class InventoryController : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void RemoveItemFromInventory(string itemName)
+    {
+        for (int i = 0; i < playerInventory.Length; i++)
+        {
+            if (playerInventory[i] != null && playerInventory[i].Equals(itemName))
+            {
+                playerInventory[i] = null;
+                Debug.Log("Item removed from inventory: " + itemName);
+                return;
+            }
+        }
+        Debug.Log("Item not found in inventory: " + itemName);
     }
 }

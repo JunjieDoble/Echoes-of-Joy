@@ -6,7 +6,7 @@ public class StunHint : MonoBehaviour
 {
     public TextMeshProUGUI hint;
     public string hintMessage = "Press E to stun the clown";
-    private bool hasHintTrigger = false;
+    public bool hasHintTrigger = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,5 +24,15 @@ public class StunHint : MonoBehaviour
     {
         yield return new WaitForSeconds(4.0f);
         hint.gameObject.SetActive(false);
+    }
+
+    public void DisableHintTrigger()
+    {
+        hasHintTrigger = true;
+    }
+
+    public void EnableHintTrigger()
+    {
+        hasHintTrigger = false;
     }
 }
