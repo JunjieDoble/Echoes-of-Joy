@@ -5,6 +5,7 @@ using UnityEngine;
 public class StunHint : MonoBehaviour
 {
     public TextMeshProUGUI hint;
+    public string hintMessage = "Press E to stun the clown";
     private bool hasHintTrigger = false;
 
     private void OnTriggerEnter(Collider other)
@@ -12,7 +13,7 @@ public class StunHint : MonoBehaviour
         if (other.CompareTag("Player") && !hasHintTrigger)
         {
             hasHintTrigger = true;
-            hint.text = "Press E to stun the clown";
+            hint.text = hintMessage;
             hint.gameObject.SetActive(true);
 
             StartCoroutine(HideHint());
