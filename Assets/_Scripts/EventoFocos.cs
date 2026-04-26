@@ -32,6 +32,8 @@ public class EventoFocos : MonoBehaviour
         foreach (GameObject clown in clownsToSpawn)
         {
             clown.SetActive(true);
+            EnemyBehaviour enemy = clown.GetComponent<EnemyBehaviour>();
+            enemy.ActivateAlwaysChase();
         }
     }
 }

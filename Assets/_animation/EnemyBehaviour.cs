@@ -9,31 +9,79 @@ public class EnemyBehaviour : MonoBehaviour
     [SerializeField] private float detectionAngle = 180f;
 
     private Animator _animator;
-    private GameObject _player;
+    private Transform _player;
     private Color _gizmosColor = Color.green;
+
+    private bool _alwaysChaseMode = false;
 
     private void Start()
     {
-        _player = GameObject.Find("Player");
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+            _player = playerObj.transform;
+
         _animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        DistanceAndVisionToPlayer();
+        if (_player == null) return;
+
+        float distance = GetDistanceToPlayer();
+        _animator.SetFloat("DistanceToPlayer", distance);
+
+        if (_alwaysChaseMode)
+        {
+            _animator.SetBool("SeePlayer", true);
+            _gizmosColor = Color.magenta;
+
+            MoveTowardsPlayer();
+        }
+        else
+        {
+            CheckNormalVision();
+        }
     }
 
-    private void DistanceAndVisionToPlayer()
+    private void MoveTowardsPlayer()
     {
-        float HorizontalDistance = GetDistanceToPlayer();
-        _animator.SetFloat("DistanceToPlayer", HorizontalDistance);
+        if (_player == null) return;
 
+        Vector3 directionToPlayer = (_player.position - transform.position).normalized;
+        directionToPlayer.y = 0;
+
+        transform.position += directionToPlayer * speed * Time.deltaTime;
+
+        if (directionToPlayer != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
+        }
+    }
+
+    private void CheckNormalVision()
+    {
+        float horizontalDistance = GetDistanceToPlayer();
         float angleToPlayer = GetAngleToPlayer();
 
+        Vector3 origin = transform.position + Vector3.up * 1.5f;
+        Vector3 directionToPlayer = (_player.position - origin).normalized;
+
         RaycastHit hit;
-        Vector3 directionToPlayer = _player.transform.position - transform.position;
-        Physics.Raycast(transform.position, directionToPlayer, out hit, detectionRadius);
-        if (hit.collider != null && hit.collider.gameObject == _player && angleToPlayer <= detectionAngle / 2f && HorizontalDistance <= detectionRadius)
+        bool seesPlayer = false;
+
+        if (Physics.Raycast(origin, directionToPlayer, out hit, detectionRadius))
+        {
+            if (hit.collider.CompareTag("Player"))
+            {
+                seesPlayer = true;
+            }
+        }
+
+        bool inRange = horizontalDistance <= detectionRadius;
+        bool inAngle = angleToPlayer <= detectionAngle * 0.5f;
+
+        if (seesPlayer && inRange && inAngle)
         {
             _animator.SetBool("SeePlayer", true);
             _gizmosColor = Color.red;
@@ -45,6 +93,18 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
+    public void ActivateAlwaysChase()
+    {
+        _alwaysChaseMode = true;
+        Debug.Log($"{gameObject.name}: Modo Always Chase ACTIVADO - Persiguiendo al jugador sin pausa.");
+    }
+
+    public void DeactivateAlwaysChase()
+    {
+        _alwaysChaseMode = false;
+        Debug.Log($"{gameObject.name}: Modo Always Chase DESACTIVADO - Volviendo a comportamiento normal.");
+    }
+
     public void StunEnemy()
     {
         _animator.SetBool("Stun", true);
@@ -54,25 +114,30 @@ public class EnemyBehaviour : MonoBehaviour
     {
         Gizmos.color = _gizmosColor;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
-        Gizmos.DrawRay(transform.position, transform.forward * detectionRadius);
 
+        if (_player != null)
+        {
+            Vector3 origin = transform.position + Vector3.up * 1.5f;
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawLine(origin, _player.position);
+        }
     }
 
     private float GetDistanceToPlayer()
     {
-        Vector3 playerPos = _player.transform.position;
+        Vector3 playerPos = _player.position;
         Vector3 enemyPos = transform.position;
 
         Vector2 playerXZ = new Vector2(playerPos.x, playerPos.z);
-        Vector2 EnemyXZ = new Vector2(enemyPos.x, enemyPos.z);
-        return Vector2.Distance(playerXZ, EnemyXZ);
+        Vector2 enemyXZ = new Vector2(enemyPos.x, enemyPos.z);
+
+        return Vector2.Distance(playerXZ, enemyXZ);
     }
 
     private float GetAngleToPlayer()
     {
-        Vector3 directionToPlayer = _player.transform.position - transform.position;
-        Vector3 directionForward = transform.forward;
-        return Vector3.Angle(directionForward, directionToPlayer);
+        Vector3 directionToPlayer = (_player.position - transform.position).normalized;
+        return Vector3.Angle(transform.forward, directionToPlayer);
     }
 
     public Transform[] GetPatrolPoints()
