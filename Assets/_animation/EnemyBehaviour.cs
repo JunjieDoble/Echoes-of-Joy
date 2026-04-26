@@ -96,13 +96,11 @@ public class EnemyBehaviour : MonoBehaviour
     public void ActivateAlwaysChase()
     {
         _alwaysChaseMode = true;
-        Debug.Log($"{gameObject.name}: Modo Always Chase ACTIVADO - Persiguiendo al jugador sin pausa.");
     }
 
     public void DeactivateAlwaysChase()
     {
         _alwaysChaseMode = false;
-        Debug.Log($"{gameObject.name}: Modo Always Chase DESACTIVADO - Volviendo a comportamiento normal.");
     }
 
     public void StunEnemy()

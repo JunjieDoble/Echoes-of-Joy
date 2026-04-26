@@ -9,8 +9,11 @@ public class DeadController : MonoBehaviour
     public TipUI tipUI;
 
     public GameObject[] clowns; 
-    EventoLightsOut eventoLightsOut;
-    EventoFocos eventoFocos;
+    public Transform[] clownSpawnPoints;
+    public GameObject[] focos;
+
+    public EventoLightsOut eventoLightsOut;
+    public EventoFocos eventoFocos;
 
     private bool isDead = false;
     private float deathTime = 4f;
@@ -24,6 +27,12 @@ public class DeadController : MonoBehaviour
         player = this.gameObject;
         fpsController = player.GetComponent<FPSController>();
         characterController = player.GetComponent<CharacterController>();
+        clownSpawnPoints = new Transform[clowns.Length];
+        for (int i = 0; i < clowns.Length; i++)
+        {
+            clownSpawnPoints[i] = clowns[i].transform;
+            Debug.Log("clown with name " + clowns[i].name + " has spawn point " + clownSpawnPoints[i].position);
+        }
     }
 
     public void PlayerDie()
@@ -36,6 +45,13 @@ public class DeadController : MonoBehaviour
             tipUI.ShowRandomTip();
 
             StartCoroutine(WaitAndRespawn());
+        }
+    }
+    private void teleportClowns()
+    {
+        for (int i = 0; i < clowns.Length; i++)
+        {
+            clowns[i].transform.position = clownSpawnPoints[i].position;
         }
     }
 
@@ -57,10 +73,21 @@ public class DeadController : MonoBehaviour
         player.transform.position = checkpoint.GetCheckpointPosition();
         characterController.enabled = true;
         fpsController.enabled = true;
+        teleportClowns();
+
         foreach (GameObject clown in clowns)
         {
-            clown.SetActive(false);
+            if(clown.name.StartsWith("Final"))
+            {
+                clown.gameObject.SetActive(false);
+            }
         }
+
+        foreach (GameObject foco in focos)
+        {
+            foco.SetActive(false);
+        }
+
         eventoLightsOut.carpaEventActivated = false;
         eventoFocos.focosEventActivated = false;
     }

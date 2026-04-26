@@ -68,15 +68,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Exorcise",
-                    "type": "Button",
-                    "id": "b66413ad-fde6-4d4f-9631-8597bf2e08b2",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -363,17 +354,6 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Stun",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f3aac07e-935c-4f87-ac3b-fa7ea26a007a",
-                    "path": "<Keyboard>/e",
-                    "interactions": "Press(behavior=2)",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Exorcise",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
