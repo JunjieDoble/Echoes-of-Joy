@@ -8,11 +8,16 @@ public class DeadController : MonoBehaviour
     public DeadUI deadUI;
     public TipUI tipUI;
 
+    public GameObject[] clowns; 
+    EventoLightsOut eventoLightsOut;
+    EventoFocos eventoFocos;
+
     private bool isDead = false;
     private float deathTime = 4f;
     private GameObject player;
     private FPSController fpsController;
     private CharacterController characterController;
+
 
     private void Start()
     {
@@ -52,5 +57,11 @@ public class DeadController : MonoBehaviour
         player.transform.position = checkpoint.GetCheckpointPosition();
         characterController.enabled = true;
         fpsController.enabled = true;
+        foreach (GameObject clown in clowns)
+        {
+            clown.SetActive(false);
+        }
+        eventoLightsOut.carpaEventActivated = false;
+        eventoFocos.focosEventActivated = false;
     }
 }

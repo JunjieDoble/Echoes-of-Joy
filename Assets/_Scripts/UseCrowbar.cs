@@ -23,24 +23,6 @@ public class UseCrowbar : MonoBehaviour
             
         }
     }
-/*    public void OnHitLock(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            if (!hasCrowbar())
-            {
-                return;
-            }
-            Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
-            if (Physics.Raycast(ray, out RaycastHit hit, layerMask))
-            {
-                // Falta gestionar si no da al enemigo
-                keyLock = hit.collider.gameObject.GetComponent<GameObject>();
-                breakCoroutine = StartCoroutine(BreakLock());
-                InventoryController.Instance.RemoveItemFromInventory("Crowbar");
-            }
-        }
-    }*/
 
     private bool hasCrowbar()
     {

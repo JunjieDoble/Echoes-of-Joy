@@ -8,11 +8,14 @@ public class EventoFocos : MonoBehaviour
     public GameObject[] clownsToSpawn;
     public EventoLightsOut eventoLightsOut;
 
+    public bool focosEventActivated = false;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !focosEventActivated)
         {
             StartCoroutine(EncenderFocos());
+            focosEventActivated = true;
         }
     }
 
@@ -21,12 +24,12 @@ public class EventoFocos : MonoBehaviour
         foreach (GameObject foco in focos)
         {
             foco.SetActive(true);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.9f);
         }
         clownsToSpawn[0].SetActive(true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         FinalFoco.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         eventoLightsOut.ReactivateLights();
 
         foreach (GameObject clown in clownsToSpawn)

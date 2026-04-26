@@ -163,4 +163,14 @@ public class FPSController : MonoBehaviour
             }
         }
     }
+
+    private void disableCameraControl()
+    {
+
+    }
+
+    private void enableCameraControl()
+    {
+
+    }
 }
