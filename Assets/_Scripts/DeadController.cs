@@ -14,6 +14,11 @@ public class DeadController : MonoBehaviour
 
     public EventoLightsOut eventoLightsOut;
     public EventoFocos eventoFocos;
+    public StatueCollider statueCollider;
+    public InventoryController inventoryController;
+
+    public GameObject[] objectsToRespawn;
+    public Transform[] objectsToRespawnLocations;
 
     private bool isDead = false;
     private float deathTime = 4f;
@@ -27,11 +32,19 @@ public class DeadController : MonoBehaviour
         player = this.gameObject;
         fpsController = player.GetComponent<FPSController>();
         characterController = player.GetComponent<CharacterController>();
+
         clownSpawnPoints = new Transform[clowns.Length];
+        objectsToRespawnLocations = new Transform[objectsToRespawn.Length]; 
+
         for (int i = 0; i < clowns.Length; i++)
         {
             clownSpawnPoints[i] = clowns[i].transform;
             Debug.Log("clown with name " + clowns[i].name + " has spawn point " + clownSpawnPoints[i].position);
+        }
+
+        for (int i = 0; i < objectsToRespawn.Length; i++)
+        {
+            objectsToRespawnLocations[i] = objectsToRespawn[i].transform;
         }
     }
 
@@ -73,6 +86,7 @@ public class DeadController : MonoBehaviour
         player.transform.position = checkpoint.GetCheckpointPosition();
         characterController.enabled = true;
         fpsController.enabled = true;
+        statueCollider.gameObject.SetActive(false);
         teleportClowns();
 
         foreach (GameObject clown in clowns)
@@ -90,5 +104,23 @@ public class DeadController : MonoBehaviour
 
         eventoLightsOut.carpaEventActivated = false;
         eventoFocos.focosEventActivated = false;
+
+        respawnItems();
+
+    }
+
+    private void respawnItems()
+    {
+        inventoryController.RemoveItemFromInventory("redKey");
+        inventoryController.RemoveItemFromInventory("Crucefix");
+        inventoryController.RemoveItemFromInventory("Crowbar");
+        inventoryController.RemoveItemFromInventory("blueKey");
+
+        for (int i = 0; i < objectsToRespawn.Length; i++)
+        {
+            objectsToRespawn[i].transform.position = objectsToRespawnLocations[i].position;
+            objectsToRespawn[i].gameObject.SetActive(true);
+        }
+
     }
 }

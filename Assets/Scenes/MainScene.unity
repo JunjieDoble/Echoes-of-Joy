@@ -47768,6 +47768,17 @@ MonoBehaviour:
   - {fileID: 827906037}
   eventoLightsOut: {fileID: 163773437}
   eventoFocos: {fileID: 1189650383}
+  statueCollider: {fileID: 0}
+  inventoryController: {fileID: 0}
+  objectsToRespawn:
+  - {fileID: 120568104}
+  - {fileID: 1807256343}
+  - {fileID: 1317678616}
+  - {fileID: 292249671}
+  - {fileID: 1780597156}
+  - {fileID: 2085107618}
+  - {fileID: 2085107618}
+  objectsToRespawnLocations: []
 --- !u!114 &1408866528
 MonoBehaviour:
   m_ObjectHideFlags: 0

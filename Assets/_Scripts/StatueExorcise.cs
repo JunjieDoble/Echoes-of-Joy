@@ -19,7 +19,6 @@ public class StatueExorcise : MonoBehaviour
             StartCoroutine(Exorcise());
             Debug.Log("Exorcising the statue...");
             exorciseText.gameObject.SetActive(true);
-            statueCollider.enabled = false;
             StartCoroutine(HideText());
         }
     }
@@ -41,6 +40,7 @@ public class StatueExorcise : MonoBehaviour
         door.SetActive(false);
         yield return new WaitForSeconds(3.0f);
         exorciseText.gameObject.SetActive(false);
+        statueCollider.gameObject.SetActive(false);
     }
 
     IEnumerator Exorcise()

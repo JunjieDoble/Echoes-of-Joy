@@ -26,11 +26,9 @@ public class Collectibles : MonoBehaviour
     IEnumerator HideText()
     {
         this.gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
-        Debug.Log("borro1");
         yield return new WaitForSeconds(3.0f);
         Congratulations.gameObject.SetActive(false);
         count.gameObject.SetActive(false);
-        Debug.Log("borro2");
         Destroy(gameObject);
     }
 
