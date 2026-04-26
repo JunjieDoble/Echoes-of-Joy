@@ -23,11 +23,12 @@ public class InventoryItem : MonoBehaviour
         }
     }
 
-        private void disableItemHint()
+    private void disableItemHint()
+    {
+        if (itemHintToDisable != null)
         {
-            if (itemHintToDisable != null)
-            {
-                itemHintToDisable.DisableHintTrigger();
-            }
+            itemHintToDisable.DisableHintTrigger();
+        }
     }
+
 }

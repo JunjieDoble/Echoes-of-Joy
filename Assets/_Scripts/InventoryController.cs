@@ -1,10 +1,12 @@
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class InventoryController : MonoBehaviour
 {
     public static InventoryController Instance;
 
     public string[] playerInventory;
+    public int[] collectibles;
 
     private void Awake()
     {
@@ -21,6 +23,11 @@ public class InventoryController : MonoBehaviour
     private void Start()
     {
         playerInventory = new string[8];
+        collectibles = new int[4];
+        for (int i = 0; i < collectibles.Length; i++)
+        {
+            collectibles[i] = 0;
+        }
     }
 
     public void AddItemToInventory(string item)
@@ -43,6 +50,12 @@ public class InventoryController : MonoBehaviour
             }
         }
         Debug.Log("Inventory is full. Cannot add item: " + item);
+    }
+
+    public void AddCollectible(int id)
+    {
+        collectibles[id] = 1;
+        Debug.Log("Collectible with id" + id + " added.");
     }
 
     public bool CheckForItem(string itemName)
@@ -70,5 +83,18 @@ public class InventoryController : MonoBehaviour
             }
         }
         Debug.Log("Item not found in inventory: " + itemName);
+    }
+
+    public int GetCollectibleCount()
+    {
+        int count = 0;
+        foreach (int collectible in collectibles)
+        {
+            if (collectible == 1)
+            {
+                count++;
+            }
+        }
+        return count;
     }
 }
