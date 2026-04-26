@@ -10,13 +10,44 @@ public class EventoLightsOut : MonoBehaviour
     public bool carpaEventActivated = false;
     public Camera mainCam;
 
+    private Color originalLightColor;
+    private float originalLightIntensity;
+    private Color originalAmbientLight;
+    private Material originalSkybox;
+    private bool originalFog;
+    private Color originalFogColor;
+    private float originalFogDensity;
+    private AmbientMode originalAmbientMode;
+    private DefaultReflectionMode originalReflectionMode;
+    private Cubemap originalReflectionTexture;
+    private Color originalCamBackground;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !carpaEventActivated)
         {
+            SaveOriginalState();
             StartCoroutine(DesactivarLuces());
             carpaEventActivated = true;
         }
+    }
+
+    void SaveOriginalState()
+    {
+        originalLightColor = directionalLight.color;
+        originalLightIntensity = directionalLight.intensity;
+
+        originalAmbientLight = RenderSettings.ambientLight;
+        originalAmbientMode = RenderSettings.ambientMode;
+
+        originalSkybox = RenderSettings.skybox;
+
+        originalFog = RenderSettings.fog;
+        originalFogColor = RenderSettings.fogColor;
+        originalFogDensity = RenderSettings.fogDensity;
+
+        originalReflectionMode = RenderSettings.defaultReflectionMode;
+        originalCamBackground = mainCam.backgroundColor;
     }
 
     public IEnumerator DesactivarLuces()
@@ -66,12 +97,24 @@ public class EventoLightsOut : MonoBehaviour
 
     public void ReactivateLights()
     {
-        directionalLight.color = Color.white;
-        directionalLight.intensity = 1f;
-        RenderSettings.ambientLight = Color.white;
-        RenderSettings.fog = true;
-        carpaEventActivated = false;
+        directionalLight.color = originalLightColor;
+        directionalLight.intensity = originalLightIntensity;
 
+        RenderSettings.ambientMode = originalAmbientMode;
+        RenderSettings.ambientLight = originalAmbientLight;
+
+        RenderSettings.skybox = originalSkybox;
+
+        RenderSettings.fog = originalFog;
+        RenderSettings.fogColor = originalFogColor;
+        RenderSettings.fogDensity = originalFogDensity;
+
+        RenderSettings.defaultReflectionMode = originalReflectionMode;
+        RenderSettings.customReflectionTexture = originalReflectionTexture;
+
+        mainCam.backgroundColor = originalCamBackground;
+
+        DynamicGI.UpdateEnvironment();
     }
 
 
