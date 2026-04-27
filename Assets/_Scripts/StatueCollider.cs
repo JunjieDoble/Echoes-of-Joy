@@ -11,7 +11,7 @@ public class StatueCollider : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             statueExorciseScript.rangeSetTrue();
-            exorciseText.text = "Press E to exorcise the statue!";
+            exorciseText.text = "Press Q to exorcise the statue!";
             exorciseText.gameObject.SetActive(true);
             Debug.Log("Player entered the statue range.");
         }

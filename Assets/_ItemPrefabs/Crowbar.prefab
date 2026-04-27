@@ -48,7 +48,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -69,90 +69,99 @@ MonoBehaviour:
   hint: {fileID: 0}
   hintMessage: A crowbar! This could be useful.
   hasHintTrigger: 0
---- !u!1001 &3782725721558007919
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -42.054398
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.6486003
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 40.54574
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8557541
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.45699847
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.24078149
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.029353052
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 52.777
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -156.182
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -16.306
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 5dfafff21dee10444875fcbff45c41e1, type: 2}
-    - target: {fileID: 919132149155446097, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: m_Name
-      value: Crowbar
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      propertyPath: m_TagString
-      value: RespawnableItem
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1462991554012811149}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1828196474356082490}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5759213969288616236}
-  m_SourcePrefab: {fileID: 100100000, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
---- !u!4 &3743696896163555204 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-  m_PrefabInstance: {fileID: 3782725721558007919}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4089155011706092862 stripped
+--- !u!1 &4089155011706092862
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-  m_PrefabInstance: {fileID: 3782725721558007919}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3743696896163555204}
+  - component: {fileID: 314007226836625441}
+  - component: {fileID: 2575888155984026859}
+  - component: {fileID: 1828196474356082490}
+  - component: {fileID: 5759213969288616236}
+  m_Layer: 0
+  m_Name: Crowbar
+  m_TagString: RespawnableItem
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3743696896163555204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4089155011706092862}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.45699847, y: -0.24078149, z: 0.029353052, w: 0.8557541}
+  m_LocalPosition: {x: -42.054398, y: 0.6486003, z: 40.54574}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1462991554012811149}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 52.777, y: -156.182, z: -16.306}
+--- !u!33 &314007226836625441
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4089155011706092862}
+  m_Mesh: {fileID: 8918077550557095614, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
+--- !u!23 &2575888155984026859
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4089155011706092862}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5dfafff21dee10444875fcbff45c41e1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1828196474356082490
 MonoBehaviour:
   m_ObjectHideFlags: 0

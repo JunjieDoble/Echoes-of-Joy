@@ -1,14 +1,13 @@
 using UnityEngine;
 
-public class TriggerDestroysGO : MonoBehaviour
+public class EnableGameObject : MonoBehaviour
 {
-    public GameObject destroyThis;
+    public GameObject target;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            destroyThis.gameObject.SetActive(false);
+            target.gameObject.SetActive(true);
         }
     }
 }
-

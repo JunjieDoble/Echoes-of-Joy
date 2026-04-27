@@ -17,7 +17,7 @@ public class DoorController : MonoBehaviour
     private Quaternion rightClosedRotation;
     private void Start()
     {
-        leftClosedRotation = leftDoor.transform.localRotation;
+        leftClosedRotation = leftDoor.transform.localRotation;  
         rightClosedRotation = rightDoor.transform.localRotation;
     }
 

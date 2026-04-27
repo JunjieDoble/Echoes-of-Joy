@@ -17,6 +17,7 @@ public class DeadController : MonoBehaviour
     public StatueCollider statueCollider;
     public InventoryController inventoryController;
 
+    public GameObject[] doorsToRestablish;
     public GameObject[] objectsToRespawn;
     public Transform[] objectsToRespawnLocations;
 
@@ -102,6 +103,11 @@ public class DeadController : MonoBehaviour
             foco.SetActive(false);
         }
 
+        foreach (GameObject door in doorsToRestablish)
+        {
+            door.gameObject.SetActive(true);
+        }
+
         eventoLightsOut.carpaEventActivated = false;
         eventoFocos.focosEventActivated = false;
 
@@ -112,7 +118,6 @@ public class DeadController : MonoBehaviour
     private void respawnItems()
     {
         inventoryController.RemoveItemFromInventory("redKey");
-        inventoryController.RemoveItemFromInventory("Crucefix");
         inventoryController.RemoveItemFromInventory("Crowbar");
         inventoryController.RemoveItemFromInventory("blueKey");
 

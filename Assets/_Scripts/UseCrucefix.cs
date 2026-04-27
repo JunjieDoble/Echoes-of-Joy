@@ -25,7 +25,9 @@ public class UseCrucefix : MonoBehaviour
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
             if (Physics.Raycast(ray, out RaycastHit hit, layerMask))
             {
+                Debug.Log("Hit object: " + hit.collider.gameObject.name);
                 EnemyBehaviour enemy = hit.collider.gameObject.GetComponent<EnemyBehaviour>();
+                Debug.Log("Enemy found: " + enemy);
                 enemy.StunEnemy();
                 useCrucefix();
             }
