@@ -29,5 +29,6 @@ public class FinishCollider : MonoBehaviour
     {
         yield return new WaitForSeconds(4.0f);
         victoryText.gameObject.SetActive(false);
+        Application.Quit();
     }
 }
