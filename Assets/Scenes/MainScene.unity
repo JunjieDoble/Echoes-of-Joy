@@ -1419,6 +1419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 45222604}
+  - component: {fileID: 45222605}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (4)
   m_TagString: Untagged
@@ -1451,6 +1452,27 @@ Transform:
   - {fileID: 1357674193}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &45222605
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45222603}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.3, y: 1.51, z: 2.84}
+  m_Center: {x: 0.36, y: 0.49, z: -2.07}
 --- !u!1 &46951045
 GameObject:
   m_ObjectHideFlags: 0
@@ -6962,6 +6984,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 201722600}
+  - component: {fileID: 201722601}
   m_Layer: 0
   m_Name: ConjuntoCajas2 (9)
   m_TagString: Untagged
@@ -6991,6 +7014,27 @@ Transform:
   - {fileID: 379547689}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 298.721, z: 0}
+--- !u!65 &201722601
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201722599}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.03, y: 1, z: 2.54}
+  m_Center: {x: -0.99, y: 0.45, z: -1.08}
 --- !u!1 &207441189
 GameObject:
   m_ObjectHideFlags: 0
@@ -7163,6 +7207,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 211850872}
+  - component: {fileID: 211850873}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (5)
   m_TagString: Untagged
@@ -7195,6 +7240,27 @@ Transform:
   - {fileID: 1734025781}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -91.21, z: 0}
+--- !u!65 &211850873
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211850871}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.24, y: 1.82, z: 2.23}
+  m_Center: {x: 0.53, y: 0.34, z: -1.54}
 --- !u!1001 &215491693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9724,6 +9790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 287483523}
+  - component: {fileID: 287483524}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (7)
   m_TagString: Untagged
@@ -9756,6 +9823,27 @@ Transform:
   - {fileID: 395122097}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 50.54, z: 0}
+--- !u!65 &287483524
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287483522}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.7, y: 1.57, z: 2.92}
+  m_Center: {x: 0.07, y: 0.43, z: -1.48}
 --- !u!1 &289109471
 GameObject:
   m_ObjectHideFlags: 0
@@ -9803,6 +9891,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 289656056}
+  - component: {fileID: 289656057}
   m_Layer: 0
   m_Name: ConjuntoCajas1 (8)
   m_TagString: Untagged
@@ -9830,6 +9919,27 @@ Transform:
   - {fileID: 600786300}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -29.141, z: 0}
+--- !u!65 &289656057
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289656055}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.63, y: 2.17, z: 1.56}
+  m_Center: {x: 0.57, y: 0.71, z: -0.64}
 --- !u!1 &291248880
 GameObject:
   m_ObjectHideFlags: 0
@@ -10550,6 +10660,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 308112232}
+  - component: {fileID: 308112233}
   m_Layer: 0
   m_Name: ConjuntoCajas1 (2)
   m_TagString: Untagged
@@ -10577,6 +10688,27 @@ Transform:
   - {fileID: 1211864742}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 23.093, z: 0}
+--- !u!65 &308112233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308112231}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.68, y: 1, z: 2.8}
+  m_Center: {x: 0.9, y: 0.75, z: -0.49}
 --- !u!1001 &311908250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11714,6 +11846,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 349702711}
+  - component: {fileID: 349702712}
   m_Layer: 0
   m_Name: ConjuntoCajas2
   m_TagString: Untagged
@@ -11743,6 +11876,27 @@ Transform:
   - {fileID: 827223595}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 232.521, z: 0}
+--- !u!65 &349702712
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349702710}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.57, y: 1, z: 2.92}
+  m_Center: {x: -0.18, y: 0.49, z: -1.1}
 --- !u!1001 &350348521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13933,6 +14087,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 407043638}
+  - component: {fileID: 407043639}
   m_Layer: 0
   m_Name: ConjuntoCajas2 (7)
   m_TagString: Untagged
@@ -13962,6 +14117,27 @@ Transform:
   - {fileID: 1602804003}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 143.282, z: 0}
+--- !u!65 &407043639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407043637}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.1, y: 1.51, z: 2.28}
+  m_Center: {x: -0.47, y: 0.42, z: -1}
 --- !u!1 &407139410
 GameObject:
   m_ObjectHideFlags: 0
@@ -15211,6 +15387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 462529383}
+  - component: {fileID: 462529384}
   m_Layer: 0
   m_Name: ConjuntoCajas1 (1)
   m_TagString: Untagged
@@ -15238,6 +15415,27 @@ Transform:
   - {fileID: 1045675399}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 44.25, z: 0}
+--- !u!65 &462529384
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462529382}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.43, y: 2.27, z: 1.92}
+  m_Center: {x: 0.71, y: 0, z: -0.65}
 --- !u!1 &466160006
 GameObject:
   m_ObjectHideFlags: 0
@@ -17422,6 +17620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 524211195}
+  - component: {fileID: 524211196}
   m_Layer: 0
   m_Name: ConjuntoCajas2 (3)
   m_TagString: Untagged
@@ -17451,6 +17650,27 @@ Transform:
   - {fileID: 1702831036}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 184.297, z: 0}
+--- !u!65 &524211196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524211194}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.58, y: 1, z: 2.92}
+  m_Center: {x: -0.46, y: 0.53, z: -1.03}
 --- !u!1001 &525733159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17568,7 +17788,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5165360603526892110, guid: c223ecaf75523874f8e0388ce417749e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1727396738}
   m_SourcePrefab: {fileID: 100100000, guid: c223ecaf75523874f8e0388ce417749e, type: 3}
 --- !u!1001 &532044888
 PrefabInstance:
@@ -18835,6 +19058,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 583019450}
+  - component: {fileID: 583019451}
   m_Layer: 0
   m_Name: ConjuntoCajas2 (10)
   m_TagString: Untagged
@@ -18864,6 +19088,27 @@ Transform:
   - {fileID: 83737686}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 184.297, z: 0}
+--- !u!65 &583019451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583019449}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.1, y: 1, z: 2.45}
+  m_Center: {x: -0.72, y: 0.47, z: -0.91}
 --- !u!1001 &583274125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22336,6 +22581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 676624105}
+  - component: {fileID: 676624106}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (10)
   m_TagString: Untagged
@@ -22368,6 +22614,27 @@ Transform:
   - {fileID: 2088197331}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -41.015, z: 0}
+--- !u!65 &676624106
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676624104}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.74, y: 1.13, z: 2.42}
+  m_Center: {x: 0.24, y: 0.36, z: -1.61}
 --- !u!1 &677881891
 GameObject:
   m_ObjectHideFlags: 0
@@ -22752,6 +23019,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 683152909}
+  - component: {fileID: 683152910}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (8)
   m_TagString: Untagged
@@ -22784,6 +23052,27 @@ Transform:
   - {fileID: 1391904333}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -47.981, z: 0}
+--- !u!65 &683152910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683152908}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.39, y: 1, z: 2.69}
+  m_Center: {x: 0.76, y: 0.35, z: -1.47}
 --- !u!1001 &683999849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25051,6 +25340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 762015384}
+  - component: {fileID: 762015385}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (12)
   m_TagString: Untagged
@@ -25083,6 +25373,27 @@ Transform:
   - {fileID: 76702253}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &762015385
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762015383}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.12, y: 1.13, z: 3.7}
+  m_Center: {x: 0.43, y: 0.47, z: -2.03}
 --- !u!1 &762580366
 GameObject:
   m_ObjectHideFlags: 0
@@ -25431,6 +25742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 776501772}
+  - component: {fileID: 776501773}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (11)
   m_TagString: Untagged
@@ -25463,6 +25775,27 @@ Transform:
   - {fileID: 1243632529}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -139.536, z: 0}
+--- !u!65 &776501773
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776501771}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.07, y: 1.38, z: 2.12}
+  m_Center: {x: -0.43, y: 0.19, z: -1.89}
 --- !u!1 &777226345
 GameObject:
   m_ObjectHideFlags: 0
@@ -28795,6 +29128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 878664821}
+  - component: {fileID: 878664822}
   m_Layer: 0
   m_Name: ConjuntoCajas2 (6)
   m_TagString: Untagged
@@ -28824,6 +29158,27 @@ Transform:
   - {fileID: 1552476633}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 67.575, z: 0}
+--- !u!65 &878664822
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878664820}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.94, y: 1.25, z: 2.52}
+  m_Center: {x: -0.68, y: 0.53, z: -1.01}
 --- !u!1001 &878709034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30291,6 +30646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 950435073}
+  - component: {fileID: 950435074}
   m_Layer: 0
   m_Name: ConjuntoCajas1 (5)
   m_TagString: Untagged
@@ -30318,6 +30674,27 @@ Transform:
   - {fileID: 49913920}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -29.141, z: 0}
+--- !u!65 &950435074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950435072}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.82, y: 2.42, z: 2.2}
+  m_Center: {x: 0.95, y: 0.45, z: -0.2}
 --- !u!1 &951331514
 GameObject:
   m_ObjectHideFlags: 0
@@ -32150,6 +32527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 993607613}
+  - component: {fileID: 993607614}
   m_Layer: 0
   m_Name: ConjuntoCajas2 (5)
   m_TagString: Untagged
@@ -32179,6 +32557,27 @@ Transform:
   - {fileID: 1722055326}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 234.836, z: 0}
+--- !u!65 &993607614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993607612}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.25, y: 1.56, z: 3.05}
+  m_Center: {x: -0.07, y: 0.27, z: -1.12}
 --- !u!4 &995374957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5757961531449347483, guid: 11c133880fc5c054bb79080bdc403769, type: 3}
@@ -33217,6 +33616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1013136742}
+  - component: {fileID: 1013136743}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (1)
   m_TagString: Untagged
@@ -33249,6 +33649,27 @@ Transform:
   - {fileID: 1725148164}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 123.931, z: 0}
+--- !u!65 &1013136743
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013136741}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.24, y: 1, z: 2.69}
+  m_Center: {x: 0.78, y: 0.39, z: -1.12}
 --- !u!1 &1015273328
 GameObject:
   m_ObjectHideFlags: 0
@@ -38712,6 +39133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1199953205}
+  - component: {fileID: 1199953206}
   m_Layer: 0
   m_Name: ConjuntoCajas1 (10)
   m_TagString: Untagged
@@ -38739,6 +39161,27 @@ Transform:
   - {fileID: 263465532}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -164.586, z: 0}
+--- !u!65 &1199953206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199953204}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.75, y: 2.87, z: 2.22}
+  m_Center: {x: 0.78, y: 0.33, z: 0}
 --- !u!1 &1205223531
 GameObject:
   m_ObjectHideFlags: 0
@@ -39508,6 +39951,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1238032319}
+  - component: {fileID: 1238032320}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (6)
   m_TagString: Untagged
@@ -39540,6 +39984,27 @@ Transform:
   - {fileID: 705271243}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 50.54, z: 0}
+--- !u!65 &1238032320
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238032318}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.2, y: 1.79, z: 2.16}
+  m_Center: {x: 0, y: 0.51, z: -2.28}
 --- !u!4 &1243632529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6731545262518507955, guid: ac783e30f8f95ec44883e3b79f6f4d34, type: 3}
@@ -42765,6 +43230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1354345525}
+  - component: {fileID: 1354345526}
   m_Layer: 0
   m_Name: ConjuntoCajas2 (8)
   m_TagString: Untagged
@@ -42794,6 +43260,27 @@ Transform:
   - {fileID: 1937384305}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 159.129, z: 0}
+--- !u!65 &1354345526
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354345524}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.06, y: 1, z: 2.82}
+  m_Center: {x: -0.68, y: 0.46, z: -0.9}
 --- !u!1001 &1356746333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44241,6 +44728,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1406930840}
+  - component: {fileID: 1406930841}
   m_Layer: 0
   m_Name: ConjuntoCajas3
   m_TagString: Untagged
@@ -44273,6 +44761,27 @@ Transform:
   - {fileID: 116248306}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 123.931, z: 0}
+--- !u!65 &1406930841
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406930839}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.5, y: 1, z: 1.92}
+  m_Center: {x: 0.55, y: 0.68, z: -1.39}
 --- !u!1001 &1408518592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45639,6 +46148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1431768042}
+  - component: {fileID: 1431768043}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (14)
   m_TagString: Untagged
@@ -45671,6 +46181,27 @@ Transform:
   - {fileID: 982529736}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -239.52701, z: 0}
+--- !u!65 &1431768043
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431768041}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.38, y: 1.83, z: 2.56}
+  m_Center: {x: 0.11, y: 0.31, z: -2.09}
 --- !u!1 &1432082965
 GameObject:
   m_ObjectHideFlags: 0
@@ -48152,6 +48683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1495588827}
+  - component: {fileID: 1495588828}
   m_Layer: 0
   m_Name: ConjuntoCajas1
   m_TagString: Untagged
@@ -48179,6 +48711,27 @@ Transform:
   - {fileID: 1264876025}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 147.024, z: 0}
+--- !u!65 &1495588828
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495588826}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.11, y: 2.34, z: 2.09}
+  m_Center: {x: 0.8, y: -0.23, z: -0.5}
 --- !u!1 &1497687878
 GameObject:
   m_ObjectHideFlags: 0
@@ -48677,6 +49230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1516253177}
+  - component: {fileID: 1516253178}
   m_Layer: 0
   m_Name: ConjuntoCajas1 (6)
   m_TagString: Untagged
@@ -48704,6 +49258,27 @@ Transform:
   - {fileID: 1234761849}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -17.922, z: 0}
+--- !u!65 &1516253178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516253176}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.05, y: 2.91, z: 2.64}
+  m_Center: {x: 0.44, y: 0.36, z: -0.61}
 --- !u!1001 &1517706558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50443,6 +51018,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1558718527}
+  - component: {fileID: 1558718528}
   m_Layer: 0
   m_Name: ConjuntoCajas1 (3)
   m_TagString: Untagged
@@ -50470,6 +51046,27 @@ Transform:
   - {fileID: 1808811631}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -79.681, z: 0}
+--- !u!65 &1558718528
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558718526}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.04, y: 1.86, z: 2.42}
+  m_Center: {x: 0.75, y: 0.62, z: -0.8}
 --- !u!1001 &1559445579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51928,6 +52525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1627285160}
+  - component: {fileID: 1627285161}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (3)
   m_TagString: Untagged
@@ -51960,6 +52558,27 @@ Transform:
   - {fileID: 371778144}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1627285161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627285159}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.21, y: 1.51, z: 2.97}
+  m_Center: {x: 0.35, y: 0.51, z: -1.82}
 --- !u!4 &1627559021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6731545262518507955, guid: ac783e30f8f95ec44883e3b79f6f4d34, type: 3}
@@ -53016,6 +53635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1672211464}
+  - component: {fileID: 1672211465}
   m_Layer: 0
   m_Name: ConjuntoCajas1 (4)
   m_TagString: Untagged
@@ -53043,6 +53663,27 @@ Transform:
   - {fileID: 1919644487}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 73.633, z: 0}
+--- !u!65 &1672211465
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672211463}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.26, y: 1.89, z: 2.19}
+  m_Center: {x: 0.65, y: 0.65, z: -0.81}
 --- !u!1001 &1673021884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54564,6 +55205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1707299367}
+  - component: {fileID: 1707299368}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (13)
   m_TagString: Untagged
@@ -54596,6 +55238,27 @@ Transform:
   - {fileID: 549800527}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 139.592, z: 0}
+--- !u!65 &1707299368
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707299366}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.42, y: 1, z: 1.95}
+  m_Center: {x: 0.12, y: 0.62, z: -1.43}
 --- !u!1 &1709507133
 GameObject:
   m_ObjectHideFlags: 0
@@ -55195,6 +55858,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 657531660668555104, guid: 399560bf59799aa448e0a64abec91512, type: 3}
   m_PrefabInstance: {fileID: 1167942105}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1727396735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5165360603526892110, guid: c223ecaf75523874f8e0388ce417749e, type: 3}
+  m_PrefabInstance: {fileID: 527005276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1727396738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727396735}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0254587, y: 1.0254585, z: 2.0509188}
+  m_Center: {x: 0.0000015199182, y: 0.51272863, z: 0.000005722046}
 --- !u!1 &1728512861
 GameObject:
   m_ObjectHideFlags: 0
@@ -56756,6 +57445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1768963638}
+  - component: {fileID: 1768963639}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (9)
   m_TagString: Untagged
@@ -56788,6 +57478,27 @@ Transform:
   - {fileID: 1265574866}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -41.015, z: 0}
+--- !u!65 &1768963639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768963637}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.62, y: 1, z: 3.16}
+  m_Center: {x: 0.03, y: 0.32, z: -1.56}
 --- !u!1001 &1769179641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60018,6 +60729,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1880356804}
+  - component: {fileID: 1880356805}
   m_Layer: 0
   m_Name: ConjuntoCajas1 (7)
   m_TagString: Untagged
@@ -60045,6 +60757,27 @@ Transform:
   - {fileID: 1625655070}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -120.696, z: 0}
+--- !u!65 &1880356805
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880356803}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.84, y: 2.83, z: 2.43}
+  m_Center: {x: 0.74, y: 0, z: -1.05}
 --- !u!4 &1881336853 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 604fe79b4993a804389ccfede78d66dc, type: 3}
@@ -62734,6 +63467,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1975654050}
+  - component: {fileID: 1975654051}
   m_Layer: 0
   m_Name: ConjuntoCajas3 (2)
   m_TagString: Untagged
@@ -62766,6 +63500,27 @@ Transform:
   - {fileID: 77905862}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 25.41, z: 0}
+--- !u!65 &1975654051
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975654049}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.24, y: 1, z: 2.62}
+  m_Center: {x: -0.01, y: 0.46, z: -2.11}
 --- !u!4 &1977656153 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5662396688909134270, guid: a89288d05164ef34da18b38197719a04, type: 3}
@@ -64076,6 +64831,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2012952798}
+  - component: {fileID: 2012952799}
   m_Layer: 0
   m_Name: ConjuntoCajas2 (4)
   m_TagString: Untagged
@@ -64105,6 +64861,27 @@ Transform:
   - {fileID: 995374957}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 159.129, z: 0}
+--- !u!65 &2012952799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012952797}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.41, y: 1.67, z: 2.76}
+  m_Center: {x: -0.33, y: 0.31, z: -0.93}
 --- !u!1001 &2014706281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66692,6 +67469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2091288778}
+  - component: {fileID: 2091288779}
   m_Layer: 0
   m_Name: ConjuntoCajas1 (9)
   m_TagString: Untagged
@@ -66719,6 +67497,27 @@ Transform:
   - {fileID: 1190088350}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: -29.141, z: 0}
+--- !u!65 &2091288779
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091288777}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.98, y: 2.48, z: 1.92}
+  m_Center: {x: 1.24, y: 0.63, z: 0}
 --- !u!1 &2092359698
 GameObject:
   m_ObjectHideFlags: 0
@@ -67595,6 +68394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2122568970}
+  - component: {fileID: 2122568971}
   m_Layer: 0
   m_Name: ConjuntoCajas2 (1)
   m_TagString: Untagged
@@ -67624,6 +68424,27 @@ Transform:
   - {fileID: 478442862}
   m_Father: {fileID: 634943913}
   m_LocalEulerAnglesHint: {x: 0, y: 308.228, z: 0}
+--- !u!65 &2122568971
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122568969}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.68, y: 1, z: 2.71}
+  m_Center: {x: -0.63, y: 0.58, z: -0.97}
 --- !u!1 &2124049695 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4945993822088156961, guid: 11c133880fc5c054bb79080bdc403769, type: 3}
