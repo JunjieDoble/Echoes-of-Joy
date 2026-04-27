@@ -5,6 +5,7 @@ public class StatueCollider : MonoBehaviour
 {
     public StatueExorcise statueExorciseScript;
     public TextMeshProUGUI exorciseText;
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

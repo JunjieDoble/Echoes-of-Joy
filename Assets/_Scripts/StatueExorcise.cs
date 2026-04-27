@@ -10,16 +10,24 @@ public class StatueExorcise : MonoBehaviour
     public TextMeshProUGUI exorciseText;
     public GameObject door;
 
+    private Coroutine exorcizeCoroutine;
+    private Coroutine hideTextCoroutine;
+
     private bool isOnRange = false;
     public void OnExorcise(InputAction.CallbackContext context)
     {
         if (context.performed && isOnRange)
         {
             exorciseText.text = "Exorcising...";
-            StartCoroutine(Exorcise());
+
+            if (exorcizeCoroutine != null) return; 
+                exorcizeCoroutine = StartCoroutine(Exorcise());
+
             Debug.Log("Exorcising the statue...");
             exorciseText.gameObject.SetActive(true);
-            StartCoroutine(HideText());
+
+            if (hideTextCoroutine != null) return; 
+            hideTextCoroutine = StartCoroutine(HideText());
         }
     }
 
@@ -41,12 +49,14 @@ public class StatueExorcise : MonoBehaviour
         yield return new WaitForSeconds(3.0f);
         exorciseText.gameObject.SetActive(false);
         statueCollider.gameObject.SetActive(false);
+        hideTextCoroutine = null;
     }
 
     IEnumerator Exorcise()
     {
         exorciseText.text = "Exorcising...";
         yield return new WaitForSeconds(3.0f);
+        exorcizeCoroutine = null;
     }
 
 }
