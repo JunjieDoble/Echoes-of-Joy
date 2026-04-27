@@ -1,6 +1,75 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1995326321400322188
+--- !u!1 &661031028071904863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1462991554012811149}
+  - component: {fileID: 4914495629329535787}
+  - component: {fileID: 7271178874322073950}
+  m_Layer: 0
+  m_Name: Hint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1462991554012811149
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661031028071904863}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3743696896163555204}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &4914495629329535787
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661031028071904863}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.43
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7271178874322073950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661031028071904863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a307a10350d924a8811c64ba045fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StunHint
+  hint: {fileID: 0}
+  hintMessage: A crowbar! This could be useful.
+  hasHintTrigger: 0
+--- !u!1001 &3782725721558007919
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -62,27 +131,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1462991554012811149}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1572102928756173188}
+      addedObject: {fileID: 1828196474356082490}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 76451165313147488}
+      addedObject: {fileID: 5759213969288616236}
   m_SourcePrefab: {fileID: 100100000, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
---- !u!1 &1689337383377479133 stripped
+--- !u!4 &3743696896163555204 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
+  m_PrefabInstance: {fileID: 3782725721558007919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4089155011706092862 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f9a120516bbde984aa9ffd160ced2bd4, type: 3}
-  m_PrefabInstance: {fileID: 1995326321400322188}
+  m_PrefabInstance: {fileID: 3782725721558007919}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1572102928756173188
+--- !u!114 &1828196474356082490
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689337383377479133}
+  m_GameObject: {fileID: 4089155011706092862}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f783da7d9182db4d852ec60baf97704, type: 3}
@@ -90,13 +167,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
   itemHintToEnable: {fileID: 0}
   itemHintToDisable: {fileID: 0}
---- !u!65 &76451165313147488
+--- !u!65 &5759213969288616236
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689337383377479133}
+  m_GameObject: {fileID: 4089155011706092862}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
