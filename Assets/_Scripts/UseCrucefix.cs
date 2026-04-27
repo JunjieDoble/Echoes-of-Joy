@@ -52,7 +52,7 @@ public class UseCrucefix : MonoBehaviour
 
     public void addCrucefix()
     {
-        usesLeft+=3;
+        usesLeft = usesLeft + 3;
         usesLeftUI.enabled = true;
         UpdateUsesUI();
     }

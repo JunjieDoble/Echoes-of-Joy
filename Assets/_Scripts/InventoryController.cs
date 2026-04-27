@@ -36,6 +36,11 @@ public class InventoryController : MonoBehaviour
         {
             if (playerInventory[i] == null)
             {
+                if (item.Contains("Clone"))
+                {
+                    string baseItemName = item.Replace("(Clone)", "").Trim();
+                    item = baseItemName;
+                }
                 playerInventory[i] = item;
                 if (item.Equals("Crucefix"))
                 {
@@ -45,17 +50,14 @@ public class InventoryController : MonoBehaviour
                         crucifixScript.addCrucefix();
                     }
                 }
-                Debug.Log("Item added to inventory: " + item);
                 return;
             }
         }
-        Debug.Log("Inventory is full. Cannot add item: " + item);
     }
 
     public void AddCollectible(int id)
     {
         collectibles[id] = 1;
-        Debug.Log("Collectible with id" + id + " added.");
     }
 
     public bool CheckForItem(string itemName)
@@ -78,11 +80,9 @@ public class InventoryController : MonoBehaviour
             if (playerInventory[i] != null && playerInventory[i].Equals(itemName))
             {
                 playerInventory[i] = null;
-                Debug.Log("Item removed from inventory: " + itemName);
                 return;
             }
         }
-        Debug.Log("Item not found in inventory: " + itemName);
     }
 
     public int GetCollectibleCount()

@@ -86,7 +86,7 @@ public class DeadController : MonoBehaviour
         player.transform.position = checkpoint.GetCheckpointPosition();
         characterController.enabled = true;
         fpsController.enabled = true;
-        statueCollider.gameObject.SetActive(false);
+        //statueCollider.gameObject.SetActive(false);
         teleportClowns();
 
         foreach (GameObject clown in clowns)
@@ -116,11 +116,17 @@ public class DeadController : MonoBehaviour
         inventoryController.RemoveItemFromInventory("Crowbar");
         inventoryController.RemoveItemFromInventory("blueKey");
 
-        for (int i = 0; i < objectsToRespawn.Length; i++)
+        foreach (GameObject o in GameObject.FindGameObjectsWithTag("RespawnableItem"))
         {
-            objectsToRespawn[i].transform.position = objectsToRespawnLocations[i].position;
-            objectsToRespawn[i].gameObject.SetActive(true);
+            Destroy(o);
+            Debug.Log("Destroyed " + o.name);
         }
 
+        for (int i = 0; i < objectsToRespawn.Length; i++)
+        {
+            GameObject x = Instantiate(objectsToRespawn[i], objectsToRespawnLocations[i].position, Quaternion.identity);
+            x.name = x.name.Replace("(clone)", "").Trim();
+
+        }
     }
 }

@@ -13,13 +13,11 @@ public class Collectibles : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             InventoryController.Instance.AddCollectible(id);
-            //
             Congratulations.gameObject.SetActive(true);
             count.text = InventoryController.Instance.GetCollectibleCount() + " / 4";
             count.gameObject.SetActive(true);
 
             StartCoroutine(HideText());
-            //Destroy(gameObject);
         }
     }
 

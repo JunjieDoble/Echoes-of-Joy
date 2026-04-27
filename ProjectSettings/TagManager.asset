@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Spotlight
+  - RespawnableItem
   layers:
   - Default
   - TransparentFX
