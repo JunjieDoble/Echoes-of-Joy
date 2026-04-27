@@ -18,7 +18,7 @@ public class StatueExorcise : MonoBehaviour
     {
         if (context.performed && isOnRange)
         {
-            exorciseText.text = "Exorcising...";
+            exorciseText.text = "Exorcising, stay close to the statue...";
 
             if (exorcizeCoroutine != null) return; 
                 exorcizeCoroutine = StartCoroutine(Exorcise());
@@ -38,6 +38,7 @@ public class StatueExorcise : MonoBehaviour
     public void rangeSetFalse()
     {
         isOnRange = false;
+        exorciseText.gameObject.SetActive(false);
     }
 
     IEnumerator HideText()
@@ -54,7 +55,7 @@ public class StatueExorcise : MonoBehaviour
 
     IEnumerator Exorcise()
     {
-        exorciseText.text = "Exorcising...";
+        exorciseText.text = "Exorcising, stay close to the statue...";
         yield return new WaitForSeconds(3.0f);
         exorcizeCoroutine = null;
     }

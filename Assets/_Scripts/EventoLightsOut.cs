@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -9,6 +10,7 @@ public class EventoLightsOut : MonoBehaviour
     public Light directionalLight;
     public bool carpaEventActivated = false;
     public Camera mainCam;
+    public TextMeshProUGUI exorciseHintText;
 
     private Color originalLightColor;
     private float originalLightIntensity;
@@ -28,6 +30,7 @@ public class EventoLightsOut : MonoBehaviour
         {
             SaveOriginalState();
             StartCoroutine(DesactivarLuces());
+            exorciseHint();
             carpaEventActivated = true;
         }
     }
@@ -115,6 +118,20 @@ public class EventoLightsOut : MonoBehaviour
         mainCam.backgroundColor = originalCamBackground;
 
         DynamicGI.UpdateEnvironment();
+    }
+
+    private void exorciseHint()
+    {
+        exorciseHintText.gameObject.SetActive(true);
+        exorciseHintText.text = "That's the statue! \n I must exorcize it as soon as possible.";
+        StartCoroutine(HideText());
+    }
+
+    IEnumerator HideText()
+    {
+        yield return new WaitForSeconds(3f);
+        exorciseHintText.gameObject.SetActive(false);
+
     }
 
 
