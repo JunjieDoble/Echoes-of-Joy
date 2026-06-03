@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -14,7 +14,7 @@ public class Collectibles : MonoBehaviour
         {
             InventoryController.Instance.AddCollectible(id);
             Congratulations.gameObject.SetActive(true);
-            count.text = InventoryController.Instance.GetCollectibleCount() + " / 4";
+            count.text = InventoryController.Instance.GetCollectibleCount() + " / 3";
             count.gameObject.SetActive(true);
 
             StartCoroutine(HideText());
