@@ -12,7 +12,7 @@ public class FPSController : MonoBehaviour
     public Camera playerCamara;
     [Range(30, 120)] public float fieldOfView = 90f;
     public float mSmoothChange = 0.3f;
-    private float runningFieldOfView = 60f;
+    //private float runningFieldOfView = 60f;
     private CharacterController characterController;
 
     [Header("Movement")]
@@ -67,7 +67,7 @@ public class FPSController : MonoBehaviour
         pitchController.localRotation = Quaternion.Euler(_mPitch * (invertPitch ? -1.0f : 1.0f), 0.0f, 0.0f);
 
         // Field of view
-        runningFieldOfView = (fieldOfView - 30f) < 0f ? 0f : fieldOfView - 30f;
+        //runningFieldOfView = (fieldOfView - 30f) < 0f ? 0f : fieldOfView - 30f;
         playerCamara.fieldOfView = fieldOfView;
 
         // --------------------------------------Movimiento--------------------------------------------------------------------
@@ -91,12 +91,12 @@ public class FPSController : MonoBehaviour
         if (_mIsRunning)
         {
             moveSpeed = runSpeed;
-            playerCamara.fieldOfView = Mathf.Lerp(playerCamara.fieldOfView, runningFieldOfView, mSmoothChange);
+            //playerCamara.fieldOfView = Mathf.Lerp(playerCamara.fieldOfView, runningFieldOfView, mSmoothChange);
         }
         else
         {
             moveSpeed = minSpeed;
-            playerCamara.fieldOfView = Mathf.Lerp(runningFieldOfView, playerCamara.fieldOfView, mSmoothChange);
+            //playerCamara.fieldOfView = Mathf.Lerp(runningFieldOfView, playerCamara.fieldOfView, mSmoothChange);
         }
     }
 
@@ -162,15 +162,5 @@ public class FPSController : MonoBehaviour
                 enemyBehaviour.UnAlertClown();
             }
         }
-    }
-
-    private void disableCameraControl()
-    {
-
-    }
-
-    private void enableCameraControl()
-    {
-
     }
 }

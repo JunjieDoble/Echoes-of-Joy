@@ -1,4 +1,4 @@
-using TMPro;
+﻿using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -54,7 +54,7 @@ public class UseCrucefix : MonoBehaviour
 
     public void addCrucefix()
     {
-        usesLeft = usesLeft + 3;
+        usesLeft = usesLeft + 1;
         usesLeftUI.enabled = true;
         UpdateUsesUI();
     }

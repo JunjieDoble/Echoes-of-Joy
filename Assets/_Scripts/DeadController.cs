@@ -34,19 +34,19 @@ public class DeadController : MonoBehaviour
         fpsController = player.GetComponent<FPSController>();
         characterController = player.GetComponent<CharacterController>();
 
-        clownSpawnPoints = new Transform[clowns.Length];
-        objectsToRespawnLocations = new Transform[objectsToRespawn.Length]; 
+        //clownSpawnPoints = new Transform[clowns.Length];
+        //objectsToRespawnLocations = new Transform[objectsToRespawn.Length]; 
 
-        for (int i = 0; i < clowns.Length; i++)
-        {
-            clownSpawnPoints[i] = clowns[i].transform;
-            Debug.Log("clown with name " + clowns[i].name + " has spawn point " + clownSpawnPoints[i].position);
-        }
+        //for (int i = 0; i < clowns.Length; i++)
+        //{
+        //    clownSpawnPoints[i] = clowns[i].transform;
+        //    Debug.Log("clown with name " + clowns[i].name + " has spawn point " + clownSpawnPoints[i].position);
+        //}
 
-        for (int i = 0; i < objectsToRespawn.Length; i++)
-        {
-            objectsToRespawnLocations[i] = objectsToRespawn[i].transform;
-        }
+        //for (int i = 0; i < objectsToRespawn.Length; i++)
+        //{
+        //    objectsToRespawnLocations[i] = objectsToRespawn[i].transform;
+        //}
     }
 
     public void PlayerDie()
@@ -61,13 +61,13 @@ public class DeadController : MonoBehaviour
             StartCoroutine(WaitAndRespawn());
         }
     }
-    private void teleportClowns()
-    {
-        for (int i = 0; i < clowns.Length; i++)
-        {
-            clowns[i].transform.position = clownSpawnPoints[i].position;
-        }
-    }
+    //private void teleportClowns()
+    //{
+    //    for (int i = 0; i < clowns.Length; i++)
+    //    {
+    //        clowns[i].transform.position = clownSpawnPoints[i].position;
+    //    }
+    //}
 
     private IEnumerator WaitAndRespawn()
     {
@@ -88,11 +88,11 @@ public class DeadController : MonoBehaviour
         characterController.enabled = true;
         fpsController.enabled = true;
         //statueCollider.gameObject.SetActive(false);
-        teleportClowns();
+        //teleportClowns();
 
         foreach (GameObject clown in clowns)
         {
-            if(clown.name.StartsWith("Final"))
+            if (clown.name.StartsWith("Final"))
             {
                 clown.gameObject.SetActive(false);
             }
@@ -103,35 +103,35 @@ public class DeadController : MonoBehaviour
             foco.SetActive(false);
         }
 
-        foreach (GameObject door in doorsToRestablish)
-        {
-            door.gameObject.SetActive(true);
-        }
+        //foreach (GameObject door in doorsToRestablish)
+        //{
+        //    door.gameObject.SetActive(true);
+        //}
 
         eventoLightsOut.carpaEventActivated = false;
         eventoFocos.focosEventActivated = false;
 
-        respawnItems();
+        //respawnItems();
 
     }
 
-    private void respawnItems()
-    {
-        inventoryController.RemoveItemFromInventory("redKey");
-        inventoryController.RemoveItemFromInventory("Crowbar");
-        inventoryController.RemoveItemFromInventory("blueKey");
+    //private void respawnItems()
+    //{
+    //    inventoryController.RemoveItemFromInventory("redKey");
+    //    inventoryController.RemoveItemFromInventory("Crowbar");
+    //    inventoryController.RemoveItemFromInventory("blueKey");
 
-        foreach (GameObject o in GameObject.FindGameObjectsWithTag("RespawnableItem"))
-        {
-            Destroy(o);
-            Debug.Log("Destroyed " + o.name);
-        }
+    //    foreach (GameObject o in GameObject.FindGameObjectsWithTag("RespawnableItem"))
+    //    {
+    //        Destroy(o);
+    //        Debug.Log("Destroyed " + o.name);
+    //    }
 
-        for (int i = 0; i < objectsToRespawn.Length; i++)
-        {
-            GameObject x = Instantiate(objectsToRespawn[i], objectsToRespawnLocations[i].position, Quaternion.identity);
-            x.name = x.name.Replace("(clone)", "").Trim();
+    //    for (int i = 0; i < objectsToRespawn.Length; i++)
+    //    {
+    //        GameObject x = Instantiate(objectsToRespawn[i], objectsToRespawnLocations[i].position, Quaternion.identity);
+    //        x.name = x.name.Replace("(clone)", "").Trim();
 
-        }
-    }
+    //    }
+    //}
 }
