@@ -15,7 +15,7 @@ public class RoomDoorController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            _doorAnimator.SetTrigger("OpenDoor");
+            _doorAnimator.SetBool("IsActive", true);
         }
     }
 
@@ -23,7 +23,7 @@ public class RoomDoorController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            _doorAnimator.SetTrigger("CloseDoor");
+            _doorAnimator.SetBool("IsActive", false);
         }
     }
 }
