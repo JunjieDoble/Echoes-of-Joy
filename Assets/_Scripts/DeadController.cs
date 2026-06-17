@@ -34,14 +34,14 @@ public class DeadController : MonoBehaviour
         fpsController = player.GetComponent<FPSController>();
         characterController = player.GetComponent<CharacterController>();
 
-        //clownSpawnPoints = new Transform[clowns.Length];
+        clownSpawnPoints = new Transform[clowns.Length];
         //objectsToRespawnLocations = new Transform[objectsToRespawn.Length]; 
 
-        //for (int i = 0; i < clowns.Length; i++)
-        //{
-        //    clownSpawnPoints[i] = clowns[i].transform;
-        //    Debug.Log("clown with name " + clowns[i].name + " has spawn point " + clownSpawnPoints[i].position);
-        //}
+        for (int i = 0; i < clowns.Length; i++)
+        {
+            clownSpawnPoints[i] = clowns[i].transform;
+            Debug.Log("clown with name " + clowns[i].name + " has spawn point " + clownSpawnPoints[i].position);
+        }
 
         //for (int i = 0; i < objectsToRespawn.Length; i++)
         //{
@@ -61,13 +61,13 @@ public class DeadController : MonoBehaviour
             StartCoroutine(WaitAndRespawn());
         }
     }
-    //private void teleportClowns()
-    //{
-    //    for (int i = 0; i < clowns.Length; i++)
-    //    {
-    //        clowns[i].transform.position = clownSpawnPoints[i].position;
-    //    }
-    //}
+    private void teleportClowns()
+    {
+        for (int i = 0; i < clowns.Length; i++)
+        {
+            clowns[i].transform.position = clownSpawnPoints[i].position;
+        }
+    }
 
     private IEnumerator WaitAndRespawn()
     {
@@ -88,7 +88,7 @@ public class DeadController : MonoBehaviour
         characterController.enabled = true;
         fpsController.enabled = true;
         //statueCollider.gameObject.SetActive(false);
-        //teleportClowns();
+        teleportClowns();
 
         foreach (GameObject clown in clowns)
         {

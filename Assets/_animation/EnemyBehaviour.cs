@@ -5,6 +5,7 @@ public class EnemyBehaviour : MonoBehaviour
     [Header("Parameters")]
     [SerializeField] private Transform[] patrolPoints;
     [SerializeField] private float speed = 2f;
+    [SerializeField] private float chaseSpeed = 5f;
     [SerializeField] private float detectionRadius = 10f;
     [SerializeField] private float detectionAngle = 180f;
 
@@ -146,6 +147,11 @@ public class EnemyBehaviour : MonoBehaviour
     public float GetSpeed()
     {
         return speed;
+    }
+
+    public float GetChaseSpeed()
+    {
+        return chaseSpeed;
     }
 
     public void AlertClown()

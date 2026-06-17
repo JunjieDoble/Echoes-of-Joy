@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class EventoFocos : MonoBehaviour
@@ -30,7 +30,7 @@ public class EventoFocos : MonoBehaviour
         yield return new WaitForSeconds(1f);
         FinalFoco.SetActive(true);
         yield return new WaitForSeconds(1.5f);
-        eventoLightsOut.ReactivateLights();
+        //eventoLightsOut.ReactivateLights();
 
         foreach (GameObject clown in clownsToSpawn)
         {
